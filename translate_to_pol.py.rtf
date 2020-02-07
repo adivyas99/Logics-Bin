@@ -1,0 +1,20 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red252\green95\blue163;\red31\green31\blue36;\red255\green255\blue255;
+\red208\green191\blue105;}
+{\*\expandedcolortbl;;\csgenericrgb\c98839\c37355\c63833;\csgenericrgb\c12054\c12284\c14131;\csgenericrgb\c100000\c100000\c100000\c85000;
+\csgenericrgb\c81569\c74902\c41177;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 \cb3 from
+\f1\b0 \cf4  googletrans 
+\f0\b \cf2 import
+\f1\b0 \cf4  Translator \
+gtrans = Translator()\
+import pandas as pd\
+Data  = pd.read_csv(\'91Name.csv\'92)\
+# traverse through all the columns and then translate it\
+for i in range(len(Data.columns)):\
+print(gtrans.translate(\cf5 \'91te\'92xt in English\cf4 , dest=\cf5 \'91po\'92\cf4 ).text)}
